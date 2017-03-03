@@ -1,29 +1,30 @@
 {
- "name": "sg-project-1",
- "version": "1.0.0",
- "description": "Sparta Global Game Project",
- "main": "index.js",
- "scripts": {
-   "start": "node index.js",
-   "postinstall": "bower install",
-   "test": "echo \"Error: no test specified\" && exit 1"
- },
- "repository": {
-   "type": "git",
-   "url": "git+https://github.com/Chezzman/sg-project-1.git"
- },
- "author": "cmupakile@spartaglobal.co",
- "license": "ISC",
- "bugs": {
-   "url": "https://github.com/Chezzman/sg-project-1/issues"
- },
- "homepage": "https://github.com/Chezzman/sg-project-1#readme",
- "engines": {
-   "node": "6.8.0",
-   "npm": ">= 3"
- },
- "dependencies": {
-   "bower": "^1.8.0",
-   "node-static": "^0.7.9"
- }
+  "name": "sg-project-1",
+  "version": "1.0.0",
+  "description": "Sparta Global project one, Website Game.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chezzman/sg-project-1.git"
+  },
+  "author": "charlesvo@spartaglobal.co",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chezzman/sg-project-1/issues"
+  },
+  "homepage": "https://github.com/Chezzman/sg-project-1#readme",
+  "engines": {
+    "node": "6.8.0",
+    "npm": ">= 3"
+  },
+  "dependencies": {
+    "bower": "^1.8.0",
+    "node-static": "^0.7.9"
+  }
 }
