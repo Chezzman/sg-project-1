@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SG-Project-1</title>
-  <!-- <img src="*" alt="Site image"> -->
+  <link rel="shortcut icon" href="images/llap.ico" />
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
   <script src="js/main.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/main.css">
 
@@ -21,8 +22,34 @@
 
   <div><a><p>Player vs Bot</p></a> </div>
 
-  <div><button>Instructions</button></div>
 
+
+    <h1 id="decision">Result</h1>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Instructions</button>
+
+  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <h3>Player 1 controls</h3>
+        <ul>
+          <li>Q - Scissors</li>
+          <li>W - Rock</li>
+          <li>E - Paper</li>
+          <li>R - Lizard</li>
+          <li>T - Spock</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--
+Scissors cut paper, scissors decapitates lizard
+Paper covers rock, Paper covers rock
+Rock bludgeons lizard, rock crushes scissors
+Lizard eats paper, lizard poisons spock
+Spock smashes scissors, spock vaporizes rock
+-->
 
 
 </body>
