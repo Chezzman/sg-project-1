@@ -1,12 +1,26 @@
 
 
-#jumbBack {
-  display: inline-block;
-  padding-left: 200px;
-  height:1000px;
-  width:1000px;
+
+
+.leftArm {
+  margin-right:20px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  height:700px;
+  width:600px;
   background: url(../images/armFlex.jpg) center no-repeat;
   animation: bannerFadeInOut 4s ease-in-out infinite; }
+
+.rightArm {
+    margin-left:20px;
+    height:700px;
+    width:600px;
+    background: url(../images/armFlex.jpg) center no-repeat;
+    animation: bannerFadeInOut 4s ease-in-out infinite; }
 
 
     @keyframes bannerFadeInOut {
