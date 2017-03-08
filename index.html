@@ -9,14 +9,16 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
-  <script src="js/main.js" charset="utf-8"></script>
+  <script src="js/score.js" charset="utf-8"></script>
+  <!-- <script src="js/main.js" charset="utf-8"></script> -->
+
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
   <div class="container">
     <div class="jumbotron">
-      <p>Rock, Paper, Scissors, Lizzar, Spoke...</p>
+      <p>Rock, Paper, Scissors, Lizzar, Spock...</p>
     </div>
   </div>
 
@@ -24,25 +26,38 @@
 
 
 
-    <h1 id="decision">Result</h1>
+  <h1 id="decision">Result</h1>
+  <div id="playerScore"><h1>0</h1></div>
+  <div id="computerScore"><h1>0</h1></div>
 
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Instructions</button>
 
-  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content">
-        <h3>Player 1 controls</h3>
-        <ul>
-          <li>Q - Scissors</li>
-          <li>W - Rock</li>
-          <li>E - Paper</li>
-          <li>R - Lizard</li>
-          <li>T - Spock</li>
-        </ul>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Instructions</button>
+
+
+   <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="
+
+     Q - Scissors
+     W - Rock
+     E - Paper
+     R - Lizard
+     T - Spock">
+    Player 1 Controls
+   </button>
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <h3>Player 1 controls</h3>
+          <ul>
+            <li>Q - Scissors</li>
+            <li>W - Rock</li>
+            <li>E - Paper</li>
+            <li>R - Lizard</li>
+            <li>T - Spock</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-
   <!--
 Scissors cut paper, scissors decapitates lizard
 Paper covers rock, Paper covers rock
