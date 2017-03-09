@@ -3,6 +3,10 @@
 Here is a classic game made modern by Sheldon Cooper from big bang theory.
 Rock, paper, scissors, lizard and Spock, because there wasn't enough for multiple people. This game is only against a bot for now with math.random function but will be getting another game mode soon.
 
+To play them game go to my Heroku page at -
+
+https://charlesvo-sg-project-1.herokuapp.com/
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine to play and change the code to your liking.

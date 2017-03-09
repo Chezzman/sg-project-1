@@ -143,7 +143,7 @@ $(document).ready(function() {
     'spock': 'http://www.flopturnriver.com/blogs/wp-content/uploads/Full-Metal-Havok-More-Sexy-N-Intelligent-Than-Spock-And-All-The-Superheroes-Combined-With-Frostnova.jpg'
   };
 
-  //Divs on page for image change
+  //Divs for the images
   var $playerImg = $('#playerAttack');
   var $computerImg = $('#computerAttack');
 
