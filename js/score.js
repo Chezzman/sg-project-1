@@ -1,16 +1,18 @@
 $(document).ready(function() {
   var winners = {
     player: 0,
-    computer: 0,
-    tie: 0
+    computer: 0
   };
 
+//adding text and score repsonse in to html
   function updateScores(result) {
     $('#decision').html(result);
     $('.playerScore').html(winners.player);
     $('.computerScore').html(winners.computer);
+
   }
 
+  // returns name and not keyCode
   function computerChoice() {
     var random = Math.random();
     if (random < 0.20) {
@@ -24,12 +26,15 @@ $(document).ready(function() {
     } else {
       return 'spock';
     }
+
   }
 
+
+//comparing rules for the game
   function compare(playerGuess, computerGuess) {
+    //player with rock
     if(playerGuess === 'rock') {
       if(computerGuess  === 'rock') {
-        winners.tie++;
         return 'Tie';
       } else if (computerGuess === 'paper') {
         winners.computer++;
@@ -47,7 +52,6 @@ $(document).ready(function() {
   //Player with paper ____________________
     } else if (playerGuess === 'paper') {
       if(computerGuess === 'paper') {
-        winners.player++;
         return 'Tie';
       } else if (computerGuess === 'rock') {
         winners.player++;
@@ -84,7 +88,6 @@ $(document).ready(function() {
     } else if (playerGuess === 'lizard') {
 
       if(computerGuess === 'lizard') {
-        winners.tie++;
         return 'Tie';
       } else if (computerGuess === 'rock') {
         winners.computer++;
@@ -121,21 +124,57 @@ $(document).ready(function() {
     }else {
       return 'That doesn\'t make any sense!';
     }
+
   }
+  //button Press object for player
+  var keyMap = {
+    '81': 'scissors',
+    '87': 'rock',
+    '69': 'paper',
+    '82': 'lizard',
+    '84': 'spock'
+  };
+  //image object for choices made
+  var images = {
+    'scissors': 'http://www.thetherapystore.com.au/wp-content/uploads/2015/10/AL428W.jpg',
+    'rock': 'http://shop.wwe.com/on/demandware.static/-/Sites/default/dw29757933/images/slot/landing/superstar-landing/Superstar-Category_Superstar_562x408_theRock.png',
+    'paper': 'http://www.weatherwriter.co.uk/media/ecom/prodlg2/loose-line-paper.jpg',
+    'lizard': 'http://www.factzoo.com/sites/all/img/reptiles/lizards/frilled-lizard-yellow-brown.jpg',
+    'spock': 'http://www.flopturnriver.com/blogs/wp-content/uploads/Full-Metal-Havok-More-Sexy-N-Intelligent-Than-Spock-And-All-The-Superheroes-Combined-With-Frostnova.jpg'
+  };
+
+  //Divs on page for image change
+  var $playerImg = $('#playerAttack');
+  var $computerImg = $('#computerAttack');
 
   $(document).keydown(function(e){
-    var keyMap = {
-      '81': 'scissors',
-      '87': 'rock',
-      '69': 'paper',
-      '82': 'lizard',
-      '84': 'spock'
-    };
+    var playedChar;
     var playerChoice = keyMap[e.which];
-    var result = compare(playerChoice, computerChoice());
+    playedChar = images[playerChoice];
+    setImage($playerImg, playedChar);
+    // set player image
+
+
+
+    var botChoice = computerChoice();
+    playedChar = images[botChoice];
+    setImage($computerImg, playedChar);
+    // set computer image
+
+
+    var result = compare(playerChoice, botChoice);
 
     updateScores(result);
+
+
   });
+
+  //function to call image choice and place in img tag
+  function setImage($target, choice){
+    $target[0].src = choice;
+  }
+
+
 
 
 

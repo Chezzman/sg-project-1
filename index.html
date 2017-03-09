@@ -17,59 +17,41 @@
 
 </head>
 <body>
+  <div id="pageWrapper">
 
+          <header class="text-md-center">
+              <h1 class="p-t-1">Rock, Paper, Scissors, Lizzar, Spock...</h1>
+          </header>
 
-
-  <!-- MODAL GAME POPUP -->
-  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Instructions</button>
-  <div class="modal fade bs-example-modal-sm " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content"> -->
-
-          <div class="container">
-            <div class="jumbotron col-xs-12">
-              <h1>Rock, Paper, Scissors, Lizzar, Spock...</h1>
+          <div class="container center col-sm-12">
+            <div class="container col-sm-6">
+              <img id="playerAttack" src="images/sadNoSpock.jpg" alt="Players choice">
+            </div>
+            <div class="container col-sm-6">
+              <img id="computerAttack" src="images/sadNoSpock.jpg" alt="Computers choice">
             </div>
           </div>
 
-         <!-- GAME MODES -->
-          <div><a><p>Player vs Bot</p></a> </div>
-
-          <!-- START OF ARM ANIMATION -->
-
-          <div class="container col-sm-12">
-            <div class="container col-sm-6 leftArm"></div>
-            <div class="container col-sm-6 rightArm"></div>
-          </div>
-
           <!-- RESULTS AND SCORING -->
-          <h1 id="decision">Result</h1>
+          <p id="decision">Result</p>
           <div>
-            <span><p>Players Score - </p>
-            <p class="playerScore">0</p></span>
+            <p class="green">Players Score - <span class="playerScore">0</span></p>
           </div>
           <div>
-            <span><p>Computers Score - </p>
-            <p class="computerScore">0</p></span>
+            <p class="red">Computers Score - <span class="computerScore">0</span></p>
           </div>
 
+            <!-- INSTRUCTION POPOUT-->
+           <button type="button" class="col-sm-6 btn btn-default" data-container="body" data-toggle="popover" data-placement="right" title="Select one of these keys" data-content="
 
-
-
-
-          <!-- INSTRUCTION BUTTON -->
-           <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="
-
-             Q - Scissors
-             W - Rock
-             E - Paper
-             R - Lizard
+             Q - Scissors,
+             W - Rock,
+             E - Paper,
+             R - Lizard,
              T - Spock">
-            Player 1 Controls
+            Instructions
            </button>
-        <!-- </div>
-      </div>
-    </div> -->
+
   <!--
 Scissors cut paper, scissors decapitates lizard
 Paper covers rock, Paper covers rock
@@ -78,6 +60,6 @@ Lizard eats paper, lizard poisons spock
 Spock smashes scissors, spock vaporizes rock
 -->
 
-
+  </div>
 </body>
 </html>

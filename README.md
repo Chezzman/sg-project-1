@@ -1,2 +1,73 @@
-# sg-project-1
-Here I will be designing and making a game with Javascript, HTML and CSS
+# Sparta Global first project, Making a Game.
+
+Limited to a week the pressure was on. The thought of trying not to over complecate it while useing previous code logic we have learnt before, with the parameter of not using liberies to assist our game.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine to play and change the code to your liking. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+To use the code you on your local machine install the following useing terminal
+
+```
+npm...
+
+bower...
+  -bower search
+    -bootstrap
+      //the project is linked to the js and css from the dist file.
+    -jquery
+
+
+```
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
