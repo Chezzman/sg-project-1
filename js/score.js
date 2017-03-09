@@ -38,7 +38,7 @@ $(document).ready(function() {
         return 'Tie';
       } else if (computerGuess === 'paper') {
         winners.computer++;
-        return 'YOU LOSE - Paper covers rock' ;
+        return 'YOU LOSE - Paper covers the rock' ;
       } else if (computerGuess === 'scissors') {
         winners.player++;
         return 'YOU WIN - Dwayne Johnson crushes scissors';
@@ -47,7 +47,7 @@ $(document).ready(function() {
         return 'YOU WIN - Rock bludgeons the lizard, The rock will be cooking lizard tonight!';
       } else if (computerGuess === 'spock'){
         winners.computer++;
-        return 'YOU LOSE - Spock vaporizes player rock ';
+        return 'YOU LOSE - Spock vaporizes the rock ';
       }
   //Player with paper ____________________
     } else if (playerGuess === 'paper') {
@@ -55,16 +55,16 @@ $(document).ready(function() {
         return 'Tie';
       } else if (computerGuess === 'rock') {
         winners.player++;
-        return 'YOU WIN - Paper covers rock!';
+        return 'YOU WIN - Paper covers their rock!';
       } else if (computerGuess === 'scissors') {
         winners.computer++;
-        return 'YOU LOSE - Scissors cut paper';
+        return 'YOU LOSE - Scissors cut your paper';
       } else if (computerGuess === 'lizard') {
         winners.computer++;
-        return 'YOU LOSE - Lizard eats paper';
+        return 'YOU LOSE - Lizard eats ya paper';
       } else if (computerGuess === 'spock') {
         winners.player++;
-        return 'YOU WIN - Paper covers rock!';
+        return 'YOU WIN - Paper disproves spock!';
       }
   //Player with scissors______________________
     } else if (playerGuess === 'scissors') {
@@ -72,16 +72,16 @@ $(document).ready(function() {
         return 'Tie';
       } else if (computerGuess === 'rock') {
         winners.computer++;
-        return 'YOU LOSE - rock crushes scissors';
+        return 'YOU LOSE - Dwayne sat on your scissors';
       } else if (computerGuess === 'paper') {
         winners.player++;
-        return 'YOU WIN - Scissors cut paper';
+        return 'YOU WIN - Scissors cut their paper';
       } else if (computerGuess === 'lizard') {
         winners.player++;
-        return 'YOU WIN - scissors decapitates lizard';
+        return 'YOU WIN - Scissors decapitates their lizard';
       } else if (computerGuess === 'spock') {
         winners.computer++;
-        return 'YOU LOSE - Spock smashes scissors';
+        return 'YOU LOSE - Spock analyses and destroys your scissors';
       }
 
   //Player with Lizard ________________________
@@ -91,13 +91,13 @@ $(document).ready(function() {
         return 'Tie';
       } else if (computerGuess === 'rock') {
         winners.computer++;
-        return 'YOU LOSE - Rock bludgeons lizard';
+        return 'YOU LOSE - Rock bludgeons your poor lizard';
       } else if (computerGuess === 'scissors') {
         winners.computer++;
-        return 'YOU LOSE - Scissors dicapitates lizard.';
+        return 'YOU LOSE - Your Lizard is allergic to the blade of their scissors.';
       } else if (computerGuess === 'paper') {
         winners.player++;
-        return 'YOU WIN - Lizard eats paper!';
+        return 'YOU WIN - Lizard nibbles their paper!';
       } else if (computerGuess === 'spock') {
         winners.player++;
         return 'YOU WIN - Lizard poisons Spock!';
@@ -114,15 +114,15 @@ $(document).ready(function() {
         return 'YOU WIN - Spock Smashes Scissors';
       } else if (computerGuess === 'lizard') {
         winners.computer++;
-        return 'YOU LOSE - Lizard poisons spock';
+        return 'YOU LOSE - Lizard poisons Spock';
       }else if (computerGuess === 'paper') {
         winners.computer++;
-        return 'YOU LOSE - Paper disparoves spock';
+        return 'YOU LOSE - Their paper disparoves spock';
       }
 
   //Unknown safty ________________________
     }else {
-      return 'That doesn\'t make any sense!';
+      return 'That key doesn\'t make any sense!';
     }
 
   }

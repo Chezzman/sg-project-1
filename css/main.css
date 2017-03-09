@@ -1,25 +1,39 @@
 
 body {
-
+  color: rgba(0, 0, 0, 1);
   display:flex;
   flex-direction: column;
   justify-content: center;
+  -ms-align-items: center;
   align-items: center;
-  background-color: rgba(116, 116, 117, 0.7));
+  background-image: url(../images/background.jpg);
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+h1{
+  padding:12px;
+  box-shadow: 8px 8px 8px rgba(14, 14, 14, 0.47);
 }
 
-
+#decision{
+  text-align: center;
+  font-size: 25px;
+}
+#popup{
+  box-shadow: 8px 8px 8px 8px rgba(14, 14, 14, 0.47);
+}
 #pageWrapper{
+  -webkit-filter: none;
+  -o-filter: none;
+  filter: none;
   width:1000px;
   height:auto;
   align-items: center;
   border: 1px solid black;
-  background-color: rgba(177, 168, 173, 0.5);
-  box-shadow: 8px 8px 8px rgba(14, 14, 14, 0.5);
+  background-color: rgba(209, 209, 209, 0.99);
+  box-shadow: 8px 8px 8px rgba(14, 14, 14, 0.47);
 }
-
 .container img {
-  height: 450px;
+  height: 420px;
   width: 450px;
 }
 p{
